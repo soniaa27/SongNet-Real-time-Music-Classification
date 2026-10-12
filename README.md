@@ -25,9 +25,9 @@ Test accuracy on the 800-track test split. "Paper" values are the results report
 
 | Model | Paper | This reproduction | Macro F1 |
 |---|---:|---:|---:|
-| Random Guess | 12.50% | — | — |
-| K-Nearest Neighbors | 36.38% | — | — |
-| Logistic Regression | 42.25% | — | — |
+| Random Guess           | 12.50% | 12.75% | 0.128 |
+| K-Nearest Neighbors    | 36.38% | 51.75% | 0.500 |
+| Logistic Regression    | 42.25% | 54.12% | 0.528 |
 | Multilayer Perceptron | 44.88% | 56.75% | 0.560 |
 | Support Vector Machine | 46.38% | 53.50% | 0.508 |
 | C-RNN | 65.23% | 63.25% | 0.626 |
