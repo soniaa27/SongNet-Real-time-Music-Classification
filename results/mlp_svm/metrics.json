@@ -1,0 +1,341 @@
+{
+  "models": {
+    "mlp": {
+      "accuracy": 0.5675,
+      "precision_macro": 0.5605713501465197,
+      "recall_macro": 0.5675,
+      "f1_macro": 0.5602094359936434,
+      "per_class": {
+        "Electronic": {
+          "precision": 0.5533980582524272,
+          "recall": 0.57,
+          "f1-score": 0.5615763546798029,
+          "support": 100.0
+        },
+        "Experimental": {
+          "precision": 0.4457831325301205,
+          "recall": 0.37,
+          "f1-score": 0.40437158469945356,
+          "support": 100.0
+        },
+        "Folk": {
+          "precision": 0.5454545454545454,
+          "recall": 0.78,
+          "f1-score": 0.6419753086419753,
+          "support": 100.0
+        },
+        "Hip-Hop": {
+          "precision": 0.6442307692307693,
+          "recall": 0.67,
+          "f1-score": 0.6568627450980392,
+          "support": 100.0
+        },
+        "Instrumental": {
+          "precision": 0.6060606060606061,
+          "recall": 0.6,
+          "f1-score": 0.6030150753768844,
+          "support": 100.0
+        },
+        "International": {
+          "precision": 0.6593406593406593,
+          "recall": 0.6,
+          "f1-score": 0.6282722513089005,
+          "support": 100.0
+        },
+        "Pop": {
+          "precision": 0.3333333333333333,
+          "recall": 0.26,
+          "f1-score": 0.29213483146067415,
+          "support": 100.0
+        },
+        "Rock": {
+          "precision": 0.696969696969697,
+          "recall": 0.69,
+          "f1-score": 0.6934673366834171,
+          "support": 100.0
+        },
+        "accuracy": 0.5675,
+        "macro avg": {
+          "precision": 0.5605713501465197,
+          "recall": 0.5675,
+          "f1-score": 0.5602094359936434,
+          "support": 800.0
+        },
+        "weighted avg": {
+          "precision": 0.5605713501465197,
+          "recall": 0.5675,
+          "f1-score": 0.5602094359936435,
+          "support": 800.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          57,
+          10,
+          1,
+          13,
+          8,
+          4,
+          7,
+          0
+        ],
+        [
+          11,
+          37,
+          11,
+          3,
+          15,
+          5,
+          11,
+          7
+        ],
+        [
+          0,
+          3,
+          78,
+          2,
+          2,
+          6,
+          7,
+          2
+        ],
+        [
+          14,
+          3,
+          1,
+          67,
+          2,
+          4,
+          8,
+          1
+        ],
+        [
+          6,
+          9,
+          11,
+          3,
+          60,
+          1,
+          4,
+          6
+        ],
+        [
+          9,
+          5,
+          13,
+          5,
+          1,
+          60,
+          6,
+          1
+        ],
+        [
+          5,
+          12,
+          22,
+          8,
+          8,
+          6,
+          26,
+          13
+        ],
+        [
+          1,
+          4,
+          6,
+          3,
+          3,
+          5,
+          9,
+          69
+        ]
+      ],
+      "n_samples": 800,
+      "val_accuracy": 0.5328330206378987,
+      "selected_params": {
+        "alpha": 0.1,
+        "hidden_layer_sizes": [
+          256
+        ]
+      }
+    },
+    "svm": {
+      "accuracy": 0.535,
+      "precision_macro": 0.5084216373927932,
+      "recall_macro": 0.5349999999999999,
+      "f1_macro": 0.5084842633542861,
+      "per_class": {
+        "Electronic": {
+          "precision": 0.5625,
+          "recall": 0.54,
+          "f1-score": 0.5510204081632653,
+          "support": 100.0
+        },
+        "Experimental": {
+          "precision": 0.4423076923076923,
+          "recall": 0.23,
+          "f1-score": 0.3026315789473684,
+          "support": 100.0
+        },
+        "Folk": {
+          "precision": 0.575,
+          "recall": 0.69,
+          "f1-score": 0.6272727272727273,
+          "support": 100.0
+        },
+        "Hip-Hop": {
+          "precision": 0.5602836879432624,
+          "recall": 0.79,
+          "f1-score": 0.6556016597510373,
+          "support": 100.0
+        },
+        "Instrumental": {
+          "precision": 0.5350877192982456,
+          "recall": 0.61,
+          "f1-score": 0.5700934579439252,
+          "support": 100.0
+        },
+        "International": {
+          "precision": 0.5175438596491229,
+          "recall": 0.59,
+          "f1-score": 0.5514018691588785,
+          "support": 100.0
+        },
+        "Pop": {
+          "precision": 0.2926829268292683,
+          "recall": 0.12,
+          "f1-score": 0.1702127659574468,
+          "support": 100.0
+        },
+        "Rock": {
+          "precision": 0.5819672131147541,
+          "recall": 0.71,
+          "f1-score": 0.6396396396396397,
+          "support": 100.0
+        },
+        "accuracy": 0.535,
+        "macro avg": {
+          "precision": 0.5084216373927932,
+          "recall": 0.5349999999999999,
+          "f1-score": 0.5084842633542861,
+          "support": 800.0
+        },
+        "weighted avg": {
+          "precision": 0.5084216373927931,
+          "recall": 0.535,
+          "f1-score": 0.508484263354286,
+          "support": 800.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          54,
+          4,
+          1,
+          15,
+          6,
+          8,
+          5,
+          7
+        ],
+        [
+          11,
+          23,
+          9,
+          8,
+          22,
+          13,
+          4,
+          10
+        ],
+        [
+          2,
+          2,
+          69,
+          4,
+          8,
+          7,
+          4,
+          4
+        ],
+        [
+          9,
+          0,
+          2,
+          79,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          6,
+          5,
+          7,
+          3,
+          61,
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          6,
+          11,
+          8,
+          3,
+          59,
+          5,
+          4
+        ],
+        [
+          7,
+          10,
+          15,
+          17,
+          7,
+          16,
+          12,
+          16
+        ],
+        [
+          3,
+          2,
+          6,
+          7,
+          3,
+          4,
+          4,
+          71
+        ]
+      ],
+      "n_samples": 800,
+      "val_accuracy": 0.49405878674171355,
+      "selected_params": {
+        "C": 0.1
+      }
+    }
+  },
+  "feature_groups": [
+    "mfcc"
+  ],
+  "n_features": 140,
+  "class_names": [
+    "Electronic",
+    "Experimental",
+    "Folk",
+    "Hip-Hop",
+    "Instrumental",
+    "International",
+    "Pop",
+    "Rock"
+  ],
+  "split_counts": {
+    "train": 5595,
+    "val": 1599,
+    "test": 800
+  },
+  "splits_sha256": "77644b5972a1c9ec8dea69199f6660ddf8c4bd030183453140b5424b31aba57f",
+  "seed": 42,
+  "sklearn_version": "1.6.1"
+}

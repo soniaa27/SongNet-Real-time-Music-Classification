@@ -1,0 +1,214 @@
+{
+  "models": {
+    "crnn": {
+      "accuracy": 0.6325,
+      "precision_macro": 0.6381964047520948,
+      "recall_macro": 0.6325,
+      "f1_macro": 0.6263080996772211,
+      "per_class": {
+        "Electronic": {
+          "precision": 0.7261904761904762,
+          "recall": 0.61,
+          "f1-score": 0.6630434782608695,
+          "support": 100.0
+        },
+        "Experimental": {
+          "precision": 0.5050505050505051,
+          "recall": 0.5,
+          "f1-score": 0.5025125628140703,
+          "support": 100.0
+        },
+        "Folk": {
+          "precision": 0.6495726495726496,
+          "recall": 0.76,
+          "f1-score": 0.7004608294930875,
+          "support": 100.0
+        },
+        "Hip-Hop": {
+          "precision": 0.8831168831168831,
+          "recall": 0.68,
+          "f1-score": 0.768361581920904,
+          "support": 100.0
+        },
+        "Instrumental": {
+          "precision": 0.5102040816326531,
+          "recall": 0.75,
+          "f1-score": 0.6072874493927125,
+          "support": 100.0
+        },
+        "International": {
+          "precision": 0.6952380952380952,
+          "recall": 0.73,
+          "f1-score": 0.7121951219512195,
+          "support": 100.0
+        },
+        "Pop": {
+          "precision": 0.4576271186440678,
+          "recall": 0.27,
+          "f1-score": 0.33962264150943394,
+          "support": 100.0
+        },
+        "Rock": {
+          "precision": 0.6785714285714286,
+          "recall": 0.76,
+          "f1-score": 0.7169811320754716,
+          "support": 100.0
+        },
+        "accuracy": 0.6325,
+        "macro avg": {
+          "precision": 0.6381964047520948,
+          "recall": 0.6325,
+          "f1-score": 0.6263080996772211,
+          "support": 800.0
+        },
+        "weighted avg": {
+          "precision": 0.6381964047520948,
+          "recall": 0.6325,
+          "f1-score": 0.6263080996772211,
+          "support": 800.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          61,
+          10,
+          0,
+          5,
+          9,
+          5,
+          8,
+          2
+        ],
+        [
+          5,
+          50,
+          7,
+          1,
+          20,
+          7,
+          6,
+          4
+        ],
+        [
+          1,
+          2,
+          76,
+          0,
+          12,
+          4,
+          2,
+          3
+        ],
+        [
+          7,
+          4,
+          1,
+          68,
+          4,
+          4,
+          10,
+          2
+        ],
+        [
+          4,
+          7,
+          7,
+          1,
+          75,
+          0,
+          1,
+          5
+        ],
+        [
+          3,
+          3,
+          9,
+          0,
+          6,
+          73,
+          3,
+          3
+        ],
+        [
+          3,
+          12,
+          14,
+          2,
+          13,
+          12,
+          27,
+          17
+        ],
+        [
+          0,
+          11,
+          3,
+          0,
+          8,
+          0,
+          2,
+          76
+        ]
+      ],
+      "n_samples": 800,
+      "val_accuracy": 0.6147592245153221,
+      "best_epoch": 16,
+      "test_loss": 1.1233834528923035
+    }
+  },
+  "class_names": [
+    "Electronic",
+    "Experimental",
+    "Folk",
+    "Hip-Hop",
+    "Instrumental",
+    "International",
+    "Pop",
+    "Rock"
+  ],
+  "split_counts": {
+    "train": 5595,
+    "val": 1599,
+    "test": 800
+  },
+  "splits_sha256": "77644b5972a1c9ec8dea69199f6660ddf8c4bd030183453140b5424b31aba57f",
+  "seed": 42,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu130",
+  "config": {
+    "sr": 22050,
+    "clip_seconds": 30.0,
+    "n_fft": 2048,
+    "hop_length": 512,
+    "n_mels": 128,
+    "conv_channels": [
+      32,
+      64,
+      128
+    ],
+    "pool_sizes": [
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "rnn_hidden": 128,
+    "rnn_layers": 2,
+    "dropout": 0.3
+  },
+  "training": {
+    "batch_size": 32,
+    "max_epochs": 40,
+    "epochs_run": 24,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  }
+}

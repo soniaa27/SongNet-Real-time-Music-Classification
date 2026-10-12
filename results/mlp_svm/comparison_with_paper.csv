@@ -1,0 +1,3 @@
+Model,Paper (reference),This run (test accuracy),Difference
+Multilayer Perceptron,0.4488,0.5675,0.11870000000000003
+Linear SVM,0.4638,0.535,0.07120000000000004

@@ -1,0 +1,2 @@
+Model,Paper (reference),This run (test accuracy),Difference
+C-RNN,0.6523,0.6325,-0.01980000000000004

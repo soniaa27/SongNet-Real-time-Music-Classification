@@ -3,13 +3,12 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
-data/
+data/*
+!data/splits.csv
 *.zip
 
 models/
 *.pt
 *.pth
 *.ckpt
-
-results/
 

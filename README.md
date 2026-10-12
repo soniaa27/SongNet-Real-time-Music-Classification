@@ -21,7 +21,22 @@ Dataset: [Free Music Archive (FMA)](https://github.com/mdeff/fma)
 
 ## Reported Results
 
-*To be added.*
+Test accuracy on the 800-track test split. "Paper" values are the results reported in the original paper; "This reproduction" values come from the notebooks in `notebooks/`.
+
+| Model | Paper | This reproduction | Macro F1 |
+|---|---:|---:|---:|
+| Random Guess | 12.50% | — | — |
+| K-Nearest Neighbors | 36.38% | — | — |
+| Logistic Regression | 42.25% | — | — |
+| Multilayer Perceptron | 44.88% | 56.75% | 0.560 |
+| Support Vector Machine | 46.38% | 53.50% | 0.508 |
+| C-RNN | 65.23% | 63.25% | 0.626 |
+
+- The C-RNN is within about 2 points of the paper and remains the best-performing model.
+- The MLP and SVM score higher than reported, likely because their hyperparameters were tuned on our validation split and our train/val/test split differs from the paper's.
+- Pop is the hardest genre for every model.
+
+Detailed metrics, confusion matrices and training curves are in `results/`.
 
 ## Environment
 
